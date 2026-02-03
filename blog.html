@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog — Nexus Agency</title>
+    <meta name="description" content="Insights on Salesforce, RevOps, AI, and building systems that scale. By Matthias Kampmann.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        nexus: { 50:'#eef6ff',100:'#d9eaff',200:'#bcdbff',300:'#8ec5ff',400:'#59a4ff',500:'#3381ff',600:'#1a5ff5',700:'#1349e1',800:'#163cb6',900:'#18378f',950:'#142457' },
+                        dark: { 950:'#0a0a0f',900:'#0d0d14',800:'#12121c',700:'#1a1a28',600:'#252536',500:'#333348' }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; background: #0a0a0f; color: #e4e4e7; }
+        .gradient-text { background: linear-gradient(135deg, #3381ff, #8ec5ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 0 40px rgba(51,129,255,0.15); border-color: rgba(51,129,255,0.3); }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Nav -->
+    <nav class="fixed top-0 w-full z-50 bg-dark-950/80 backdrop-blur-xl border-b border-white/5">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-nexus-600 flex items-center justify-center font-bold text-white text-sm">N</div>
+                <span class="font-semibold text-lg text-white">Nexus Agency</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="/#problem" class="text-sm text-zinc-400 hover:text-white transition-colors">Problem</a>
+                <a href="/#solution" class="text-sm text-zinc-400 hover:text-white transition-colors">Solution</a>
+                <a href="/#pricing" class="text-sm text-zinc-400 hover:text-white transition-colors">Pricing</a>
+                <a href="/blog.html" class="text-sm text-white">Blog</a>
+            </div>
+            <a href="/#pricing" class="hidden md:block px-5 py-2.5 bg-nexus-600 hover:bg-nexus-700 text-white text-sm font-medium rounded-lg transition-colors">Get Started</a>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-24">
+        <div class="max-w-4xl mx-auto px-6">
+            <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4">Blog</h1>
+            <p class="text-xl text-zinc-400 mb-16">Thoughts on Salesforce, RevOps, AI, and building systems that scale.</p>
+
+            <div class="space-y-8">
+                <!-- Post template -->
+                <article class="p-6 rounded-2xl bg-dark-800 border border-white/5 card-hover">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-xs font-mono text-nexus-400 px-2 py-1 bg-nexus-600/10 rounded">Salesforce</span>
+                        <span class="text-xs text-zinc-500">Coming Soon</span>
+                    </div>
+                    <h2 class="text-xl font-semibold text-white mb-2">Why Your Salesforce Org Needs a Health Score</h2>
+                    <p class="text-zinc-400 leading-relaxed">Most teams have no idea how healthy their Salesforce org actually is. Here's how to quantify it — and why it matters for your business.</p>
+                </article>
+
+                <article class="p-6 rounded-2xl bg-dark-800 border border-white/5 card-hover">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-xs font-mono text-nexus-400 px-2 py-1 bg-nexus-600/10 rounded">AI + RevOps</span>
+                        <span class="text-xs text-zinc-500">Coming Soon</span>
+                    </div>
+                    <h2 class="text-xl font-semibold text-white mb-2">10 AI Agents That Run My Salesforce Workflow</h2>
+                    <p class="text-zinc-400 leading-relaxed">How I built a CLI with specialized AI agents for reports, flows, data operations, testing, and more — and why it changes everything.</p>
+                </article>
+
+                <article class="p-6 rounded-2xl bg-dark-800 border border-white/5 card-hover">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-xs font-mono text-nexus-400 px-2 py-1 bg-nexus-600/10 rounded">Process</span>
+                        <span class="text-xs text-zinc-500">Coming Soon</span>
+                    </div>
+                    <h2 class="text-xl font-semibold text-white mb-2">The Designjoy Model for Salesforce Consulting</h2>
+                    <p class="text-zinc-400 leading-relaxed">Why flat-fee, async, unlimited-request consulting beats the traditional agency model for growing SaaS companies.</p>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-12 border-t border-white/5">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-sm text-zinc-500">© 2026 Nexus Agency. All rights reserved.</p>
+            <div class="flex gap-6 text-sm text-zinc-500">
+                <a href="/privacy.html" class="hover:text-white transition-colors">Privacy</a>
+                <a href="/imprint.html" class="hover:text-white transition-colors">Imprint</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
